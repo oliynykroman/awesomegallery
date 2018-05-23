@@ -1,0 +1,27 @@
+
+/*Стандартна анімація поведінки ссилок і решти елементів*/
+.animate(@all:all, @time:0.5s, @efect:ease, @delay:0s){
+    -webkit-transition+_: @all @time @efect @delay;
+    -moz-transition+_: @all @time @efect @delay;
+    -ms-transition+_: @all @time @efect @delay;
+    -o-transition+_: @all @time @efect @delay;
+    transition+_: @all @time @efect @delay;
+}
+/*Ключові кадри + анімація*/
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+.animation_keyframes(@keyframes_name, @fillmode, @delay_kf:0) {
+    -webkit-animation: @keyframes_name;
+    -moz-animation: @keyframes_name;
+    animation: @keyframes_name;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: @fillmode; 
+    -webkit-animation-delay: @delay_kf;
+    -moz-animation-delay: @delay_kf;
+    -o-animation-delay: @delay_kf;
+    animation-delay: @delay_kf;
+}

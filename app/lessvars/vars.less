@@ -1,0 +1,58 @@
+/*Блок обовязкових кольорів сайта*/
+@href_c:#000;/*колір гіперпосилань*/
+@text_c:#000;/*колір текста*/
+@err_c:#000;/*колір помилкових полів */
+@notify_c:#000;/*повідомлення*/
+@plch_c:#000;/*плейсхолдери*/
+
+
+@column_counter:12;
+@cont_width:100%;
+@max_cont_width:1330px;
+@column_spacer:0 15px;
+
+/*Global vars*/
+@white:#fff;
+@blackTexts: #232323;
+@black:#191b1d;
+@grayTexts:#373737;
+@gray: #e8e4f1;
+@grayBorder:#ebebeb;
+@violet:#503392;
+@yellow:#fff200;
+@blue:#009dda;
+@footerGray:#7a7a7a;
+@bulletsGray:#b7b7b7;
+@smallPromo:#999999;
+@smallFooter:#1a1a1a;
+
+
+/*columns*/
+
+
+
+
+/*Тінь блока*/
+/*@shadow: 0.5px 0.866px 21px 0px rgba(0, 0, 0, 0.14);*/
+@text-shadow: 0px 6px 10px rgba(1, 3, 4, 0.27);
+
+
+/*Мусові кольори для плейсхолдерів і невірно заповнених полів форм*/
+@placeholder-color:@plch_c;
+@required-color:@notify_c;
+@error_formfield-color:@err_c;
+@error_message_block_bck:@err_c;
+@error_message_block_color:@err_c;
+/* стилі плейсхолдерів до купки не клеїти! */
+::-webkit-input-placeholder { 
+    color: @placeholder-color !important;
+}
+:-moz-placeholder {  
+    color: @placeholder-color !important;
+}
+::-moz-placeholder { 
+    color: @placeholder-color !important;
+}
+:-ms-input-placeholder {  
+    color: @placeholder-color !important;
+}

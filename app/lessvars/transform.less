@@ -1,0 +1,63 @@
+.scale (@factorX:1, @facrorY:1) {
+    -webkit-transform+_: scale(@factorX, @factorY);
+    -moz-transform+_: scale(@factorX, @factorY);
+    -ms-transform+_: scale(@factorX, @factorY);
+    -o-transform+_: scale(@factorX, @factorY);
+    transform+_: scale(@factorX, @factorY);
+}
+.rotate (@deg:0) {
+    -webkit-transform+_: rotate(@deg);
+    -moz-transform+_: rotate(@deg);
+    -ms-transform+_: rotate(@deg);
+    -o-transform+_: rotate(@deg);
+    transform+_: rotate(@deg);
+}
+.skew (@deg:0, @deg2:0) {
+    -webkit-transform+_: skew(@deg, @deg2);
+    -moz-transform+_: skew(@deg, @deg2);
+    -ms-transform+_: skew(@deg, @deg2);
+    -o-transform+_: skew(@deg, @deg2);
+    transform+_: skew(@deg, @deg2);
+}
+.translateX (@x:0) {
+    -webkit-transform+_: translateX(@x);
+    -moz-transform+_: translateX(@x);
+    -ms-transform+_: translateX(@x);
+    -o-transform+_: translateX(@x);
+    transform+_: translateX(@x);
+}
+.translateY (@y:0) {
+    -webkit-transform+_: translateY(@y);
+    -moz-transform+_: translateY(@y);
+    -ms-transform+_: translateY(@y);
+    -o-transform+_: translateY(@y);
+    transform+_: translateY(@y);
+}
+.translateXY (@x:0, @y:0) {
+    -webkit-transform+_: translate(@x, @y);
+    -moz-transform+_: translate(@x, @y);
+    -ms-transform+_: translate(@x, @y);
+    -o-transform+_: translate(@x, @y);
+    transform+_: translate(@x, @y);
+}
+.translate3d (@x:0, @y:0, @z:0) {
+    -webkit-transform+_: translate3d(@x, @y, @z);
+    -moz-transform+_: translate3d(@x, @y, @z);
+    -ms-transform+_: translate3d(@x, @y, @z);
+    -o-transform+_: translate3d(@x, @y, @z);
+    transform+_: translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+    -webkit-perspective:@value;
+    -moz-perspective: 	@value;
+    -ms-perspective: 	@value;
+    perspective: 	@value;
+}
+.transform-origin (@x:center, @y:center) {
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin: @x @y;
+    -ms-transform-origin: @x @y;
+    -o-transform-origin: @x @y;
+    transform-origin: @x @y;
+}
+

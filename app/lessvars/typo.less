@@ -1,0 +1,39 @@
+/*Сімейства шрифтів. Якщо є то тре покласти в папку fonts*/
+/*підключалка: .font-face(pf_beausans_probbook, pfbeausanspro_book);*/
+.font-face(@fontname, @fontfile, @fontWeight:'normal', @fontStyle:'normal'){ 
+    @font-face {
+        font-family: '@{fontname}';
+        src: url('../fonts/@{fontfile}.eot');
+        src: url('../fonts/@{fontfile}.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/@{fontfile}.woff') format('woff'),
+            url('../fonts/@{fontfile}.ttf') format('truetype'),
+            url('../fonts/@{fontfile}.svg#@{fontname}') format('svg');
+        font-weight: @fontWeight;
+        font-style: @fontStyle;
+    }
+}
+/*Трикрапки*/
+/*мусять бути задані фізичні розміри*/
+.ellipsis{ 
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.text_shadows(@txt_shadow){
+    -webkit-text-shadow: @txt_shadow;
+    -moz-text-shadow: @txt_shadow;
+    text-shadow: @txt_shadow;
+}
+.multicolumns(@count:2, @gap:3em){
+    -moz-column-count: @count;
+    -moz-column-gap: @gap;
+    -webkit-column-count: @count;
+    -webkit-column-gap: @gap;
+    -o-column-count: @count;
+    -o-column-gap: @gap;
+    -ms-column-count: @count;
+    -ms-column-gap: @gap;
+    column-count: @count;
+    column-gap: @gap;
+}
